@@ -28,9 +28,12 @@ body {
 }
 
 .left-side {
-    background-image: linear-gradient(hsl(249, 99%, 64%),hsl(278, 94%, 30%) ) ;
+    position: relative;
+    background-image: url('./images/bg-main-desktop.png');
     width: 30%;
 }
+
+
 
 .right-side {
     background-color: white;
@@ -96,3 +99,31 @@ input {
     background-color: hsl(278, 68%, 11%);
     border-radius: 5px;
 }
+
+.front-card {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    top: 22%;
+    left: 10%;
+
+}
+
+.back-card{
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    top: 48%;
+    left: 20%;
+}
+
+@media screen and (max-width: 1150px) {
+    .front-card {
+       display: none;
+    }
+    
+    .back-card{
+    display: none;
+       
+    }
+  }
