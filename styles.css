@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /*PRIMARY COLORS*/
+    --Lineargradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+    --Red: hsl(0, 100%, 66%)
+
+    /*SECONDARY COLORS*/
+    --White: hsl(0, 0%, 100%)
+    --Lightgrayishviolet: hsl(270, 3%, 87%)
+--Darkgrayishviolet: hsl(279, 6%, 55%)
+--Verydarkviolet: hsl(278, 68%, 11%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left-side {
+    background-image: linear-gradient(hsl(249, 99%, 64%),hsl(278, 94%, 30%) ) ;
+    width: 30%;
+}
+
+.right-side {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: .5rem;
+    font-weight: 900;
+}
+
+input {
+    margin-bottom: .5rem;
+    padding: .5rem;
+    border: 1px solid rgb(210, 210, 214);
+    border-radius: 5px;
+    color: rgb(210, 210, 214);
+}
+
+.expiration-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.expiration-date-labels {
+    margin-bottom: .5rem;
+}
+
+.expiration-date-labels label {
+    margin-right: 3.1rem;
+}
+
+.expiration-date-inputs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.expiration-date-inputs input {
+ 
+    width: 5rem;
+}
+
+#cvc-input {
+    width: 7.5rem;
+}
+
+.confirm-button {
+    padding: 10px;
+    margin-top: 1.3rem;
+    width: 100%;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 5px;
+}
